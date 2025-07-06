@@ -10,3 +10,10 @@ Deployment - AWS Sagemaker
 ## Front End
 Displays AQI data.\
 ![](Screenshots/aqidata.png)
+
+Displays AQI data along with live location.\
+![](Screenshots/aqiwithloc.png)
+
+Displays the PM data collected from sensors.\
+![](Screenshots/pmdata.png)
+
