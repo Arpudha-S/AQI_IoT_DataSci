@@ -1,0 +1,23 @@
+digraph "Air Quality Monitoring System" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Air Quality Monitoring System" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	subgraph "cluster_Data Sources" {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label="Data Sources" labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		"0a9ee0019d6c458694a22703022f4f92" [label="IoT Sensors" height=1.9 image="connections.png" shape=none]
+		b2d348d2bb9b480b9b576c298e74e129 [label="Weather API" height=1.9 image="api.png" shape=none]
+	}
+	subgraph cluster_Processing {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label=Processing labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		"1016a2033d2b44759c5d7b287fd3100c" [label=Spark height=1.9 image="spark.png" shape=none]
+		"270e92e9ea544978b4b76ae71a7bbf79" [label="ML Model" height=1.9 image="ml.png" shape=none]
+	}
+	subgraph cluster_Visualization {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label=Visualization labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		c1a5dcf653b44cf69e036d3893d00c8f [label=Dashboard height=1.9 image="dashboard.png" shape=none]
+	}
+	"0a9ee0019d6c458694a22703022f4f92" -> "1016a2033d2b44759c5d7b287fd3100c" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"1016a2033d2b44759c5d7b287fd3100c" -> "270e92e9ea544978b4b76ae71a7bbf79" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"270e92e9ea544978b4b76ae71a7bbf79" -> c1a5dcf653b44cf69e036d3893d00c8f [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	b2d348d2bb9b480b9b576c298e74e129 -> "1016a2033d2b44759c5d7b287fd3100c" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
