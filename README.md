@@ -17,3 +17,23 @@ Displays AQI data along with live location.\
 Displays the PM data collected from sensors.\
 ![](Screenshots/pmdata.png)
 
+Bar plot on frequency of weather conditions.\
+![](Screenshots/barplot.png)
+
+Box plot on health risk score by season.\
+![](Screenshots/boxplot.png)
+
+Naive Bayes confusion matrix.\
+![](Screenshots/confmatrix.png)
+
+Preprocessed data by removing outliers.\
+![](Screenshots/preprocess.png)
+
+Linear Regression on Temperature vs Health Risk.\
+![](Screenshots/linearreg.png)
+
+PCA 2d projection by health risk score.\
+![](Screenshots/pca.png)
+
+Logistic Regression.\
+![](Screenshots/logisticreg.png)
