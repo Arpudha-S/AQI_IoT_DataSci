@@ -37,3 +37,9 @@ PCA 2d projection by health risk score.\
 
 Logistic Regression.\
 ![](Screenshots/logisticreg.png)
+
+Interactive 3D plot describing the aqi conditions for cities.\
+![](Screenshots/interactive3d.png)
+
+Interactive plot for temperature vs health risk.\
+![](Screenshots/interactiveplot.png)
